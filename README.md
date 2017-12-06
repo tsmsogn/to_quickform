@@ -44,7 +44,7 @@ generator.to_set_defaults
 # ));
 ```
 
-### Creating createElement()/addElement() codes
+### Creating addElement()/createElement() codes
 
 ```ruby
 generator.to_create_element
