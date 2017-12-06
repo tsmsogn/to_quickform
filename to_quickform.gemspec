@@ -6,6 +6,7 @@ require "to_quickform/version"
 Gem::Specification.new do |spec|
   spec.name          = "to_quickform"
   spec.version       = ToQuickform::VERSION
+  spec.licenses      = ['MIT']
   spec.authors       = ["tsmsogn"]
   spec.email         = ["tsmsogn@gmail.com"]
 
