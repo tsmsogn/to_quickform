@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+gem "activesupport"
+gem "attr_required"
+gem "to_php_array"
 
-# Specify your gem's dependencies in to_quickform.gemspec
 gemspec

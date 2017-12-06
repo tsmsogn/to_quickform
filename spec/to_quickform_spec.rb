@@ -5,7 +5,11 @@ RSpec.describe ToQuickform do
     expect(ToQuickform::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  describe "::YAML" do
+    it { expect(ToQuickform::YAML(path_to_file('sample.yaml'))).to be_a ToQuickform::Generator }
+  end
+
+  describe "::JSON" do
+    it { expect(ToQuickform::JSON(File.open(path_to_file('sample.json')))).to be_a ToQuickform::Generator }
   end
 end

@@ -1,0 +1,13 @@
+$form->addRule('name', '名前を入力してください', 'required');
+$form->addRule('mail', 'メールアドレスを入力してください', 'required');
+$form->addRule('mail', '正しいメールアドレスを入力してください', 'regex', '/^[^@]+@[^.]+\..+$/');
+$form->addRule(array('mail', 'mail_conf'), 'メールアドレスが一致しません', 'compare');
+$form->addRule('mail_conf', '確認用メールアドレスを入力してください', 'required');
+$form->addRule('mail_conf', '正しい確認用メールアドレスを入力してください', 'regex', '/^[^@]+@[^.]+\..+$/');
+$form->addRule('gender', '性別を選択してください', 'required');
+$form->addGroupRule('zip_code', '郵便番号を入力してください', 'required');
+$form->addGroupRule('zip_code', '郵便番号を数字で入力してください', 'numeric');
+$form->addRule('state', '都道府県を選択してください', 'required');
+$form->addRule('city', '市区町村を入力してください', 'required');
+$form->addRule('pc', 'PCを選択してください', 'required');
+$form->addRule('privacy_policy', '「同意する」にチェックしてください', 'required');
