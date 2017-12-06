@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["tsmsogn"]
   spec.email         = ["tsmsogn@gmail.com"]
 
-  spec.summary       = %q{to_quickform creates some QuickForm codes from given data.}
-  spec.description   = %q{to_quickform creates some QuickForm codes from given data.}
+  spec.summary       = %q{ToQuickform creates some QuickForm codes from given data.}
+  spec.description   = %q{ToQuickform creates some QuickForm codes from given data.}
   spec.homepage      = "https://github.com/tsmsogn/to_quickform"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
