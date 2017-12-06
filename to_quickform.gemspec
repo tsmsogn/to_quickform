@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "activesupport", "~> 5.1.4"
   spec.add_runtime_dependency "attr_required", "~> 1.0.1"
+  spec.add_runtime_dependency "to_php_array", "~> 0.1.0"
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
