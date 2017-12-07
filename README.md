@@ -130,7 +130,7 @@ generator.to_create_element
 # $form->addElement('checkbox', 'privacy_policy', '', '同意する');
 ```
 
-### Createing addRule()/addGrouoRule() codes
+### Creating addRule()/addGrouoRule() codes
 
 ```ruby
 generator.to_add_rule
