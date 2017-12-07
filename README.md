@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-### Parseing an YAML/JSON 
+### Parsing an YAML/JSON 
 
 ```ruby
 generator = ToQuickform.YAML(yaml)
