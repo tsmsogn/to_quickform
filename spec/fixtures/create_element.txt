@@ -1,5 +1,7 @@
 // name
 $form->addElement('text', 'name', '', '');
+// password
+$form->addElement('password', 'password', '', '');
 // mail
 $form->addElement('text', 'mail', '', '');
 // mail_conf
@@ -78,3 +80,9 @@ $form->addGroup($tmp, 'pc', '', '');
 $form->addElement('textarea', 'note', '', '');
 // privacy_policy
 $form->addElement('checkbox', 'privacy_policy', '', '同意する');
+// id
+$form->addElement('hidden', 'id', '1', '');
+// reset_button
+$form->addElement('reset', 'reset_button', 'リセット', '');
+// submit_button
+$form->addElement('submit', 'submit_button', '送信する', '');

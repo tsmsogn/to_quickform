@@ -44,14 +44,22 @@ module ToQuickform
           ToQuickform::ERBTemplates::BASIC_CHECKBOX_ELEMENT_TEMPLATE
         when "group"
           ToQuickform::ERBTemplates::BASIC_GROUP_ELEMENT_TEMPLATE
+        when "hidden"
+          ToQuickform::ERBTemplates::BASIC_VALUE_ELEMENT_TEMPLATE
+        when "password"
+          ToQuickform::ERBTemplates::BASIC_ELEMENT_TEMPLATE
         when "radio"
           ToQuickform::ERBTemplates::BASIC_RADIO_ELEMENT_TEMPLATE
+        when "reset"
+          ToQuickform::ERBTemplates::BASIC_VALUE_ELEMENT_TEMPLATE
         when "select"
           ToQuickform::ERBTemplates::BASIC_SELECT_ELEMENT_TEMPLATE
         when "text"
           ToQuickform::ERBTemplates::BASIC_ELEMENT_TEMPLATE
         when "textarea"
           ToQuickform::ERBTemplates::BASIC_ELEMENT_TEMPLATE
+        when "submit"
+          ToQuickform::ERBTemplates::BASIC_VALUE_ELEMENT_TEMPLATE
         end
       end
     end

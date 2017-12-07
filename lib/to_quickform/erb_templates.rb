@@ -48,6 +48,11 @@ PHP
 $form->addElement('<%= element.type %>', '<%= element.name %>', '', <%= ToPhpArray.dump(element.value, { :wrap => true }) %>, '<%= element.attribute %>');
 PHP
 
+    BASIC_VALUE_ELEMENT_TEMPLATE = <<PHP
+// <%= element.name %>
+$form->addElement('<%= element.type %>', '<%= element.name %>', '<%= element.value %>', '<%= element.attribute %>');
+PHP
+
     BASIC_CREATE_ELEMENT_TEMPLATE = <<PHP
 $tmp[] = $form->createElement('<%= element.type %>', '<% if defined? args0 %><%= args0 %><% end %>', '<% if defined? args1 %><%= args1 %><% end %>', '<% if defined? args2 %><%= args2 %><% end %>', '<% if defined? args3 %><%= args3 %><% end %>');
 PHP
