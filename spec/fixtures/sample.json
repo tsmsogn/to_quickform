@@ -11,6 +11,10 @@
 			]
 		},
 		{
+			"type": "password",
+			"name": "password"
+		},
+		{
 			"type": "text",
 			"name": "mail",
 			"rule": [
@@ -190,6 +194,21 @@
 					"error_message": "「同意する」にチェックしてください"
 				}
 			]
+		},
+		{
+			"type": "hidden",
+			"name": "id",
+			"value": 1
+		},
+		{
+			"type": "reset",
+			"name": "reset_button",
+			"value": "リセット"
+		},
+		{
+			"type": "submit",
+			"name": "submit_button",
+			"value": "送信する"
 		}
 	]
 }
