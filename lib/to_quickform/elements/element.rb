@@ -9,7 +9,8 @@ module ToQuickform
     class Element < ToQuickform::Base
       include ToQuickform::ERBTemplates
       attr_required "type"
-      attr_optional "attribute", "default", "element", "label", "name", "rule", "separator", "text", "value"
+      attr_optional "attribute", "default", "element", "label", "name",
+                    "quote_value", "rule", "separator", "text", "value"
 
       def initialize(attributes = {})
         if attributes.is_a?(Hash)
@@ -22,6 +23,9 @@ module ToQuickform
                   Rule.new(rule)
                 end
               end
+            elsif key == "quote_value"
+              value = true
+              value = attributes[key] if attributes.key?(key)
             else
               value = attributes[key]
             end

@@ -45,12 +45,16 @@ PHP
 
     BASIC_SELECT_ELEMENT_TEMPLATE = <<PHP
 // <%= element.name %>
+<% if element.value.is_a?(Hash) || element.value.is_a?(Array) -%>
 $form->addElement('<%= element.type %>', '<%= element.name %>', '', <%= ToPhpArray.dump(element.value, { :wrap => true }) %>, '<%= element.attribute %>');
+<% else -%>
+$form->addElement('<%= element.type %>', '<%= element.name %>', '', <%= output(element, 'value') %>, '<%= element.attribute %>');
+<% end -%>
 PHP
 
     BASIC_VALUE_ELEMENT_TEMPLATE = <<PHP
 // <%= element.name %>
-$form->addElement('<%= element.type %>', '<%= element.name %>', '<%= element.value %>', '<%= element.attribute %>');
+$form->addElement('<%= element.type %>', '<%= element.name %>', <%= output(element, 'value') %>, '<%= element.attribute %>');
 PHP
 
     BASIC_CREATE_ELEMENT_TEMPLATE = <<PHP
