@@ -27,7 +27,7 @@ $tmp = array();
 <% args2 = element.attribute -%>
 <%= ERB.new(BASIC_CREATE_ELEMENT_TEMPLATE, nil, '-', '_create_element').result(binding) -%>
 <% end -%>
-$form->addGroup($tmp, '<%= element.name %>', '<%= element.label %>', '<% if element.separator %><%= element.separator %><% end %>');
+$form->addGroup($tmp, '<%= element.name %>', '<%= element.label %>', '<%= element.separator %>');
 PHP
 
     BASIC_RADIO_ELEMENT_TEMPLATE = <<PHP
