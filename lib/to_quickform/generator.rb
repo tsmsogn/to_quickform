@@ -69,5 +69,19 @@ module ToQuickform
         defaults.merge({ element.name => element.default })
       end
     end
+
+    private
+
+    def output(element, key)
+      output = element.send(key).to_s
+      output = "'#{output}'" if do_quote?(element, key)
+      output
+    end
+
+    def do_quote?(element, key)
+      method = "quote_" + key
+      return true unless element.respond_to?(method)
+      element.send(method)
+    end
   end
 end

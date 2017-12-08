@@ -1,0 +1,4 @@
+// state
+$form->addElement('select', 'state', '', $state, '');
+// submit_button
+$form->addElement('submit', 'submit_button', SUBMIT_VALUE, '');

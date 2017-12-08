@@ -1,0 +1,16 @@
+{
+	"element": [
+		{
+			"type": "select",
+			"name": "state",
+			"value": "$state",
+			"quote_value": false
+		},
+		{
+			"type": "submit",
+			"name": "submit_button",
+			"value": "SUBMIT_VALUE",
+			"quote_value": false
+		}
+	]
+}
