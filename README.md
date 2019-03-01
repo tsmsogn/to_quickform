@@ -1,4 +1,7 @@
-# ToQuickform [![Build Status](https://travis-ci.org/tsmsogn/to_quickform.svg?branch=master)](https://travis-ci.org/tsmsogn/to_quickform)
+# ToQuickform
+
+[![Build Status](https://travis-ci.org/tsmsogn/to_quickform.svg?branch=master)](https://travis-ci.org/tsmsogn/to_quickform)
+[![Maintainability](https://api.codeclimate.com/v1/badges/262bb600c07307111ee0/maintainability)](https://codeclimate.com/github/tsmsogn/to_quickform/maintainability)
 
 ToQuickform creates some QuickForm codes from given data.
 
